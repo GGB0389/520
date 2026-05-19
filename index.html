@@ -7,8 +7,13 @@
   <style>
     @font-face {
       font-family: "LoveFont";
-      src: url("./my-font.ttf") format("truetype");
+      src:
+        url("./my-font.woff2") format("woff2"),
+        url("./my-font.woff") format("woff"),
+        url("./my-font.ttf") format("truetype");
       font-display: swap;
+      font-weight: 400;
+      font-style: normal;
     }
 
     :root {
@@ -32,7 +37,7 @@
       margin: 0;
       min-height: 100%;
       overflow: hidden;
-      font-family: "LoveFont", "Microsoft YaHei", sans-serif;
+      font-family: "LoveFont", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       color: var(--text);
       background: #190414;
       user-select: none;
